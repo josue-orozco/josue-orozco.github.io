@@ -1,0 +1,291 @@
+html
+{
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    
+    display: grid;
+    grid: "header" minmax(200px, max-content)
+          "main  " minmax(1000px, max-content)
+          "footer" minmax(200px, max-content);
+
+    align-content: center;
+    justify-content: center;
+
+    background: #fff;
+    font-family: "Lato", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {    
+    font-weight: 300; 
+}
+
+header {
+    position: relative;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 7%;
+    padding-right: 5%;
+
+    background-color: #487dff;
+    animation-name: rotate-header;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#header-name {
+    margin-top: 25px;
+    margin-bottom: 0px;
+
+    font-size: 48px;
+    color: white; 
+
+    animation-delay: .6s;
+}
+
+#header-subtitle {
+    margin-top: 0px;
+
+    font-size: 26px;
+    color: #DADADA;
+
+    animation-delay: .8s;
+}
+
+.animate-pop-in {
+    animation: pop-in .6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+    opacity: 0;
+}
+
+.about{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #c5c8c9;
+    
+    text-align: center;
+    background-color: #fff;    
+}
+
+.about > img {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 175px;
+}
+
+#section-header{
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    border-bottom: 1px solid #487dff;
+    font-size: 32px;    
+}
+
+.about-text {
+    display: inline-block;
+    width: 80%;
+    
+    color: #757575;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.social-links {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.social-links > a {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    font-size: 32px;    
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a.email {
+    color: #487dff;
+}
+
+a.github {
+    color: #333;
+}
+
+a.linkedin {
+    color: #0077B5;
+}
+
+.resume-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #487dff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .08), 0 3px 6px rgba(0, 0, 0, .15);	
+}
+
+.resume-link > a {
+    color: #ecf0f1;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#experience {
+    text-align: center;
+    padding-bottom: 40px;
+    background-color: #ecf0f1;
+}
+
+#experience ul.timeline {
+    position: relative;
+    padding: 0; /*Need to remove padding from ul*/
+
+    /*Pushing timeline body to the right edge to fit line on left.
+    Look into how to clean it up cause it also dependant on width of container*/
+    margin-left: 25%;
+}
+
+#experience ul.timeline li.timeline-container {
+    display: block;
+    width: 80%;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .08), 0 3px 6px rgba(0, 0, 0, .15);
+    border-radius: 6px;
+
+    list-style: none;
+    text-align: left;
+}
+
+/* Create Line */
+#experience ul.timeline::before {
+    /*top and bottom provide length of timeline*/
+    position: absolute;
+    top: 0px;
+    bottom: 0em;
+    left: -50px;
+    
+    content: '';
+    background-color: #487dff;
+    width: 4px;
+
+    background: linear-gradient(to bottom, #487dff 80%, #ecf0f1);
+}
+
+#experience .timeline-icon {
+    position: absolute;
+    left: -73px; /*line is moved -50, line thickness: 2, circle radius: 25*/
+    
+    margin-top: -30px;
+    text-align: center;
+    
+    font-size: 28px;
+    border-radius: 100%;
+    background-color: #487dff;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+}
+
+#experience .timeline-icon i {
+    margin-top: 10px; /*moves icon up to center of circle*/
+}
+
+#experience ul.timeline .container-employer-name {
+    font-size: 26px;
+    font-weight: normal;  
+
+    margin-top: 00px;
+    margin-bottom: 0px;
+}
+
+#experience ul.timeline .container-position {
+    font-size: 18px;
+
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#experience ul.timeline .container-date {
+    font-size: 14px;
+
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+#experience ul.timeline .container-text {
+    font-size: 14px;
+    color: #757575;
+    line-height: 20px;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    margin-left: 15px;
+    padding: 0; /*Need to remove padding from ul*/
+    text-align: left;
+
+    font-weight: 300;
+}
+ 
+#experience ul.timeline .container-text > li{ 
+    margin: 0 0 10px 0; 
+ }
+
+#experience span.tag {
+    padding: 5px;
+    background-color: #7280fd;
+    color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .08), 0 3px 6px rgba(0, 0, 0, .15);
+    margin-right: 5px;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    border-top: 1px solid #c5c8c9;
+    
+    text-align: center;
+    background-color: #fff; 
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links > .social-links > a {
+    font-size: 42px;
+}
+
+header  { grid-area: header; }
+main    { grid-area: main; }
+footer  { grid-area: footer; }
+
+/** Responsive to medium screens and larger**/
+@media screen and (min-width: 800px) {
+    #header-name {
+        margin-top: 20px;
+        font-size: 60px;
+    }
+    
+    .about-text {
+        width: 60%;
+    }
+
+    #experience ul.timeline li.timeline-container {
+        width: 70%;
+    }
+}

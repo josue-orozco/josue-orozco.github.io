@@ -1,7 +1,203 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <title>Josue Orozco</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap">
+    <script src="https://kit.fontawesome.com/3a88746d09.js" crossorigin="anonymous"></script>
+</head>
+
 <body>
-<h1>Hello Maddy!</h1>
-<p>I've been expecting you!!</p>
+    <header class="grid-item">
+        <h1 id="header-name" class="animate-pop-in">
+            Josue Orozco
+        </h1>
+        <p id="header-subtitle" class="animate-pop-in">
+            Software Developer
+        </p>
+    </header>
+
+    <main class="grid-item">
+        <section class="about">
+            <img src="/images/profileImage.jpg" alt="Profile Image">
+
+            <h2 id="section-header">
+                About Me
+            </h2>
+
+            <div id="about-body">
+                <p class="about-text">
+                    Hi there! My name is Josue. I am an experienced software engineer, developing and
+                    maintaining mission critical software for Unmanned Aerial Vehicles (UAVs).
+                </p>
+                <p class="about-text">
+                    My journey began at the University of Florida, where I graduated with degrees in Aerospace
+                    and Mechanical Engineering, which in a serendipitous turn of events, introduced me to the
+                    world of programming. Since then, programming has intertwined itself with my appetite for
+                    knowledge, expanding my toolset to tinker with ideas and bring them to fruition as projects.                    
+                </p>
+                <p class="about-text">
+                    Most recently, I have been exploring any and all areas of web development as I look for
+                    my next challenge to tackle. If you think we can build something together, let’s have a chat.
+                </p>
+                <div id="about-links">
+                    <div class="social-links">
+                        <a class="link email" href="mailto:josueorozco@live.com" target="_blank">
+                            <i class="fa fa-envelope-o"></i>
+                        </a>
+                        <a class="link github" href="https://github.com/josue-orozco" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a>
+                        <a class="link linkedin" href="https://www.linkedin.com/in/josuejorozco" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <div class="resume-link">
+                        <a class="link" href="/documents/JosueOrozcoResume.pdf" target="_blank">
+                            Download resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2 id="section-header">
+                Experience
+            </h2>
+
+            <ul class="timeline">
+                <li class="timeline-container">
+                    <div class="timeline-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="container-employer-name">
+                        Insitu, Inc
+                    </h3>
+                    <h4 class="container-position">
+                        Software Engineer - RQ21A Blackjack
+                    </h4>
+                    <h6 class="container-date">
+                        August 2020 &#8212; Present
+                    </h6>
+                    <ul class="container-text">
+                        <li>
+                            Collaborated in the development of High-level Designs and Detailed Designs
+                            of new product features for a distributed real-time embedded software system.
+                        </li>
+                        <li>
+                            Programmed new aircraft components and refactored legacy components to align the
+                            interoperability of the distributed systems more closely with industry standards.
+                        </li>
+                        <li>
+                            Resolved software defects by locating and isolating the problem, identifying possible
+                            solutions, selecting a practical and effective approach, and validating correction by
+                            partnering with SQA. 
+                        </li>
+                    </ul>
+                    <span class="tag">C++</span>
+                    <span class="tag">C#</span>
+                </li>
+                <li class="timeline-container">
+                    <div class="timeline-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="container-employer-name">
+                        Insitu, Inc
+                    </h3>
+                    <h4 class="container-position">
+                        Software Engineer - Advanced Development
+                    </h4>
+                    <h6 class="container-date">
+                        August 2017 &#8212; August 2020
+                    </h6>
+                    <ul class="container-text">
+                        <li>
+                            Championed new features across the software development life cycle in a highly
+                            agile environment.
+                        </li>
+                        <li>
+                            Designed system interfaces and developed C++ libraries for real-time embedded
+                            systems to communicate with new third-party hardware.
+                        </li>
+                        <li>
+                            Integrated hardware and software components into functional systems and collaborated
+                            with Simulation and Flight Operation teams to validate minimum viable product
+                            releases for early adopters.
+                        </li>
+                    </ul>
+                    <span class="tag">C++</span>
+                    <span class="tag">C#</span>
+                </li>
+                <li class="timeline-container">
+                    <div class="timeline-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="container-employer-name">
+                        Insitu, Inc
+                    </h3>
+                    <h4 class="container-position">
+                        Software Engineer Intern
+                    </h4>
+                    <h6 class="container-date">
+                        April 2017 &#8212; August 2017
+                    </h6>
+                    <ul class="container-text">
+                        <li>
+                            Headed a research spike to validate if the autopilot companion computer could
+                            provide navigational redundancy when in a GPS-denied environment by down-selecting
+                            sensors to an onboard camera and developing a pattern detection and tracking
+                            application with the OpenCV library.
+                        </li>
+                        <li>
+                            Created the user interface for a Windows application in C# using the MVVM architecture
+                            that allowed aircraft operators to configure the radio settings in a user-friendly
+                            manner as an alternative to the command line.
+                        </li>
+                    </ul>
+                    <span class="tag">C++</span>
+                    <span class="tag">C#</span>
+                </li>
+            </ul>
+        </section>
+
+        <!--Fill out once project is complete -->
+    <!-- <section id="projects">
+            <h2 id="section-header">
+                Projects
+            </h2>
+        </section> -->
+    </main>
+
+    <footer class="grid-item">
+        <h2 id="section-header">
+            Get in touch
+        </h2>
+        <div class="footer-links">
+            <div class="social-links">
+                <a class="link email" href="mailto:josueorozco@live.com" target="_blank">
+                    <i class="fa fa-envelope-o"></i>
+                </a>
+                <a class="link github" href="https://github.com/josue-orozco" target="_blank">
+                    <i class="fa fa-github"></i>
+                </a>
+                <a class="link linkedin" href="https://www.linkedin.com/in/josuejorozco" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <div class="resume-link">
+                <a class="link" href="/documents/JosueOrozcoResume.pdf" target="_blank">
+                    Download resume
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
